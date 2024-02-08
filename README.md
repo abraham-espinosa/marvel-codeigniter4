@@ -9,7 +9,7 @@ Web application built with PHP, CodeIgniter 4, and Bootstrap 5 that implements M
 * [Apache Server](https://httpd.apache.org)
 * [Marvel API Key](https://developer.marvel.com/documentation/getting_started)
 
-I utilized XAMPP as my development enviroment to run Apache and MySQL, more informatio at [www.apachefriends.org](https://www.apachefriends.org)
+I utilized XAMPP as my development enviroment to run Apache and MySQL, more information at [www.apachefriends.org](https://www.apachefriends.org)
 
 ## How to Consume Marvel API
 This application consumes Marvel API to populate the database with an initial set of data. [Sign up](https://developer.marvel.com/documentation/getting_started) to get an API key. 
