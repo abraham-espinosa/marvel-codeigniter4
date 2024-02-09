@@ -16,7 +16,9 @@ class App extends BaseConfig
      *
      *    http://example.com/
      */
-    public string $baseURL = 'http://localhost/marvel-codeigniter4/public/';
+    
+    // Base URL to run it locally
+    public string $baseURL = 'http://localhost/marvel-codeigniter4/';
 
     /**
      * Allowed Hostnames in the Site URL other than the hostname in the baseURL.

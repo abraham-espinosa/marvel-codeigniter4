@@ -4,6 +4,12 @@ namespace App\Database\Migrations;
 
 use CodeIgniter\Database\Migration;
 
+/*
+    Create a migration for characters table with the following fields:
+    -id
+    -name
+    -thumbnailPath
+*/
 class AddCharacters extends Migration
 {
     public function up()

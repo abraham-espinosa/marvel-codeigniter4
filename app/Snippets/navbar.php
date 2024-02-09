@@ -1,3 +1,4 @@
+<!-- Snippet for navegation bar -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="background-color: #ff0000;">
   <div class="container-fluid">
     <a class="navbar-brand" href="<?php echo base_url('/')?>"><img  src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Marvel_Logo.svg/800px-Marvel_Logo.svg.png" class="d-inline-block align-text-top" style="width: 6rem;"></a>

@@ -1,11 +1,13 @@
 <?php
 // Declare Controller
 namespace App\Controllers;
-
+// Use CharactersModel 
 use App\Models\CharactersModel;
 
+// This is my Character Controller 
 class Character extends BaseController
 {
+    // Get all characters from  characters table 
     public function getCharactersList()
     {
         $Character = new CharactersModel();
@@ -18,6 +20,7 @@ class Character extends BaseController
         return view('home',$values);
     }
 
+    // Create a new character
     public function createCharacter(){
         $values = [
                 "name" => $_POST['name'],
@@ -32,9 +35,9 @@ class Character extends BaseController
         }else{
             return redirect()->to(base_url('/'))->with('response','error');
         }
-
     }
  
+    // Update character by id
     public function updateCharacterById(){
         $values = [
             "name" => $_POST['name'],
@@ -49,9 +52,9 @@ class Character extends BaseController
         }else{
             return redirect()->to(base_url('/'))->with('response','error');
         }
-
     }
 
+    // Get character by id
     public function getCharacterById($characterId){
         $id = ["id" => $characterId];
         $Character = new CharactersModel();
@@ -61,6 +64,7 @@ class Character extends BaseController
         return view('update',$values);
     }
 
+    // Delete character by id
     public function deleteCharacterById($characterId){
         $Character = new CharactersModel();
         $id = ["id" => $characterId];
@@ -72,10 +76,12 @@ class Character extends BaseController
         }
     }
 
+    // Navigate to create view 
     public function createForm(){
         return view('create');
     }
 
+    // Get characters and filter by name 
     public function getCharactersByString(){
         $string = $_POST['search'];
         $Character = new CharactersModel();
@@ -87,4 +93,5 @@ class Character extends BaseController
                   ];
         return view('home',$values);  
     }
+    
 }

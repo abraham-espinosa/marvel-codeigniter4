@@ -26,16 +26,16 @@ class Database extends Config
      */
     public array $default = [
         'DSN'          => '',
-        'hostname'     => 'localhost',
-        'username'     => 'root',
-        'password'     => '',
-        'database'     => 'marvel-characters',
+        'hostname'     => 'localhost', // I runned my database locally 
+        'username'     => 'root', // I utilized phpmyadmin from XAMPP, by default username is root
+        'password'     => '', // Password is empty
+        'database'     => 'marvel-characters', // I call my database marvel-characters 
         'DBDriver'     => 'MySQLi',
         'DBPrefix'     => '',
         'pConnect'     => false,
         'DBDebug'      => true,
         'charset'      => 'utf8',
-        'DBCollat'     => 'utf8_general_ci',
+        'DBCollat'     => 'utf8_general_ci', // Select utf8_general_ci when you create the database
         'swapPre'      => '',
         'encrypt'      => false,
         'compress'     => false,
